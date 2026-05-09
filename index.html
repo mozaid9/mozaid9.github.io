@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohmmed Zaid Patel - Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-name">MZ</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Mohmmed Zaid Patel</h1>
+      <p class="hero-tagline">Software Engineer. I build things that work.</p>
+      <div class="hero-links">
+        <a href="https://github.com/mozaid9" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="#projects" class="btn btn-outline">See my work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Software engineering graduate with a 2:1. I build across the stack and pick up new tech quickly.
+        Looking for technical roles where I can keep shipping real software.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card full">
+          <div class="project-header">
+            <h3>FootyForums</h3>
+            <span class="badge">Honours Dissertation</span>
+          </div>
+          <p class="project-desc">
+            A cross-platform football app combining live match data with real-time community forums. Built as my final year dissertation at UCLan.
+          </p>
+          <ul class="project-highlights">
+            <li>Live fixtures, player profiles and personalised favourites via Football Data API</li>
+            <li>Real-time match chat using Firestore snapshot listeners</li>
+            <li>Anti-corruption layer normalises raw API responses into typed DTOs</li>
+            <li>Automated keyword moderation with configurable severity and strike system</li>
+            <li>Women's football treated as a first-class feature throughout</li>
+          </ul>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span><span>MVVM</span><span>Provider</span>
+          </div>
+          <a href="https://github.com/mozaid9/footyforums" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Aegis</h3>
+            <span class="badge">Personal Project</span>
+          </div>
+          <p class="project-desc">
+            A local AI assistant that runs entirely on-device. Built on Ollama with a persistent memory system, voice input and a web UI. No cloud, no API keys.
+          </p>
+          <ul class="project-highlights">
+            <li>REST API server in pure Python with zero third-party dependencies</li>
+            <li>SQLite memory with context injected into every prompt</li>
+            <li>Voice input via mlx-whisper and ffmpeg</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>Ollama</span><span>SQLite</span><span>Whisper</span>
+          </div>
+          <a href="https://github.com/mozaid9/aegis" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Joke Microservice</h3>
+            <span class="badge">University Assignment</span><span class="badge score">80%</span>
+          </div>
+          <p class="project-desc">
+            A distributed microservices system deployed on Azure. Separate joke, submit and moderator services communicate via RabbitMQ with an ETL container writing to the database. Routed through a Kong API gateway with HTTPS and rate limiting.
+          </p>
+          <ul class="project-highlights">
+            <li>Containerised with Docker and orchestrated via Docker Compose</li>
+            <li>Async messaging via RabbitMQ with persistent queues</li>
+            <li>Kong API gateway with TLS and rate limiting</li>
+            <li>Infrastructure provisioned with Terraform on Azure</li>
+          </ul>
+          <div class="project-tech">
+            <span>Node.js</span><span>Docker</span><span>RabbitMQ</span><span>MongoDB</span><span>Kong</span><span>Terraform</span><span>Azure</span>
+          </div>
+          <a href="https://github.com/mozaid9/joke-service" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>SmartOffice</h3>
+            <span class="badge">University Assignment</span>
+          </div>
+          <p class="project-desc">
+            Smart office management system in C# with a single controller for lighting, door access and fire alarms. Built around a state machine with enforced transitions and a full unit test suite.
+          </p>
+          <div class="project-tech">
+            <span>C#</span><span>.NET</span><span>State Machine</span><span>Unit Tests</span>
+          </div>
+          <a href="https://github.com/mozaid9/SmartOffice" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Smart Home System</h3>
+            <span class="badge">University Assignment</span><span class="badge score">87%</span>
+          </div>
+          <p class="project-desc">A C++ smart home system built around an OOP inheritance hierarchy. SmartDevice base class with SmartLight, SmartSpeaker, Thermostat and SecurityCamera subclasses, managed across rooms with manual memory management.</p>
+          <div class="project-tech">
+            <span>C++</span><span>OOP</span><span>Inheritance</span><span>Memory Management</span>
+          </div>
+          <a href="https://github.com/mozaid9/advancedprogramming" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Sorting Algorithm Benchmarker</h3>
+            <span class="badge">University Assignment</span><span class="badge score">74%</span>
+          </div>
+          <p class="project-desc">Merge Sort vs Quick Sort performance analysis in Python across datasets of 10k and 100k elements, tracking comparisons, execution time and memory usage with matplotlib visualisations.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Algorithms</span><span>Matplotlib</span><span>Pandas</span>
+          </div>
+          <a href="https://github.com/mozaid9/computational-thinking" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Facial Emotion Recognition</h3>
+            <span class="badge">University Project</span>
+          </div>
+          <p class="project-desc">ML model that classifies facial expressions into emotion categories from image data.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Jupyter</span><span>ML</span>
+          </div>
+          <a href="https://github.com/mozaid9/Faciel-emotion-recognition" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Sugar Tracker</h3>
+            <span class="badge">University Project</span>
+          </div>
+          <p class="project-desc">Cross-platform mobile app for tracking sugar intake, built with Flutter.</p>
+          <div class="project-tech">
+            <span>Dart</span><span>Flutter</span><span>Mobile</span>
+          </div>
+          <a href="https://github.com/mozaid9/sugartrackerapp" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Pack That Player</h3>
+            <span class="badge">Personal Project</span>
+          </div>
+          <p class="project-desc">A Roblox game with custom Lua scripting for pack-opening mechanics and game logic.</p>
+          <div class="project-tech">
+            <span>Lua</span><span>Roblox</span><span>Game Dev</span>
+          </div>
+          <a href="https://github.com/mozaid9/UnboxAFootballer" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Dart</li>
+            <li>C++</li>
+            <li>Lua</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Technologies</h4>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>Flutter / Dart</li>
+            <li>Firebase / Firestore</li>
+            <li>Docker</li>
+            <li>RabbitMQ</li>
+            <li>Ollama / LLMs</li>
+            <li>.NET</li>
+            <li>MongoDB</li>
+            <li>Azure / Terraform</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Concepts</h4>
+          <ul>
+            <li>Microservices Architecture</li>
+            <li>MVVM Architecture</li>
+            <li>Real-time Systems</li>
+            <li>State Machine Design</li>
+            <li>Unit Testing</li>
+            <li>Machine Learning</li>
+            <li>Mobile Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Open to software engineering roles. Feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/mohmmed-zaid-518b27291/" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/mozaid9" target="_blank" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Mohmmed Zaid Patel &middot; <a href="https://github.com/mozaid9" target="_blank">mozaid9</a></p>
+  </footer>
+
+</body>
+</html>
