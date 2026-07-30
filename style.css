@@ -111,6 +111,15 @@ nav ul a:hover {
 .hero-tagline {
   color: var(--text-dim);
   font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-cred {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 
