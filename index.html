@@ -3,368 +3,451 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohmmed Zaid Patel - Software Engineer</title>
-  <meta name="description" content="Software engineer and First Class BSc Software Engineering graduate from UCLan. Flutter apps, Firebase backends and production client websites." />
+  <title>Mohmmed Zaid Patel | Freelance Web Developer</title>
+  <meta
+    name="description"
+    content="Freelance web developer building fast, professional websites and custom content systems for businesses across the UK."
+  />
+  <meta name="theme-color" content="#08110e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohmmed Zaid Patel | Freelance Web Developer" />
+  <meta
+    property="og:description"
+    content="Professional websites built around your business, your customers and your next stage of growth."
+  />
+  <meta property="og:image" content="/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohmmed Zaid Patel | Freelance Web Developer" />
+  <meta
+    name="twitter:description"
+    content="Professional websites built around your business, your customers and your next stage of growth."
+  />
+  <meta name="twitter:image" content="/og.png" />
+  <link rel="icon" href="og.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
-    <span class="nav-name">MZ</span>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Mohmmed Zaid Patel, home">
+        <span class="brand-mark" aria-hidden="true">MZ</span>
+        <span class="brand-copy">
+          <strong>Mohmmed Zaid</strong>
+          <small>Freelance Web Developer</small>
+        </span>
+      </a>
 
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1>Mohmmed Zaid Patel</h1>
-      <p class="hero-tagline">Software Engineer. I build things that work.</p>
-      <p class="hero-cred">BSc (Hons) Software Engineering &middot; First Class &middot; UCLan</p>
-      <div class="hero-links">
-        <a href="https://github.com/mozaid9" target="_blank" class="btn btn-primary">GitHub</a>
-        <a href="#projects" class="btn btn-outline">See my work</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Client work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-cta" href="#contact">Start a project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Available for freelance projects</p>
+          <h1>Websites that make your business look the part.</h1>
+          <p class="hero-lead">
+            I design and build fast, professional websites for businesses that
+            need more than a generic template—from polished marketing sites to
+            custom content systems your team can update.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/mohmmed-zaid-518b27291/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discuss your project <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary" href="#work">See client work</a>
+          </div>
+          <ul class="hero-points" aria-label="Service highlights">
+            <li>Custom-built</li>
+            <li>Mobile-first</li>
+            <li>SEO-ready</li>
+            <li>Easy to manage</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="A preview of a professionally built business website">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <div class="browser-address">yourbusiness.co.uk</div>
+            </div>
+            <div class="browser-page">
+              <div class="mock-nav">
+                <span class="mock-logo"></span>
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-hero">
+                <div>
+                  <span class="mock-kicker"></span>
+                  <span class="mock-heading"></span>
+                  <span class="mock-heading short"></span>
+                  <span class="mock-copy"></span>
+                  <span class="mock-copy short"></span>
+                  <span class="mock-button"></span>
+                </div>
+                <div class="mock-image">
+                  <span class="mock-shape one"></span>
+                  <span class="mock-shape two"></span>
+                </div>
+              </div>
+              <div class="mock-trust">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="quality-card quality-card-top">
+            <span class="quality-icon">01</span>
+            <div><strong>Built for your goals</strong><small>Not just to look good</small></div>
+          </div>
+          <div class="quality-card quality-card-bottom">
+            <span class="quality-icon">02</span>
+            <div><strong>Ready on every screen</strong><small>Desktop, tablet and mobile</small></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About</h2>
-      <p>
-        Software engineering graduate from UCLan with First Class Honours.
-        I've built Flutter apps with real payments and server-side logic, a live website for a Manchester construction firm
-        with its own admin CMS, distributed microservices on Azure, an AR navigation tool and a local AI assistant from scratch.
-        I've also taught GCSE Computer Science, which is a fast way to find out how well you actually understand something.
-      </p>
-    </div>
-  </section>
+    <section class="proof-strip" aria-label="Professional credentials">
+      <div class="container proof-grid">
+        <div><strong>Production client work</strong><span>Built and shipped end to end</span></div>
+        <div><strong>First Class Honours</strong><span>BSc Software Engineering</span></div>
+        <div><strong>Full-stack capability</strong><span>Design, build, CMS and deployment</span></div>
+        <div><strong>UK-based</strong><span>Clear, direct collaboration</span></div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-
-        <div class="project-card full">
-          <div class="project-header">
-            <h3>FootyForums</h3>
-            <span class="badge">Honours Dissertation</span><span class="badge score">80%</span>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What I can build</p>
+            <h2>A complete web presence, built around your business.</h2>
           </div>
-          <p class="project-desc">
-            A cross-platform football app combining live match data with real-time community forums. Built as my final year dissertation at UCLan.
+          <p>
+            Whether you need a credible first website or a more capable platform,
+            I can take the project from the first conversation through to launch.
           </p>
-          <ul class="project-highlights">
-            <li>Live fixtures, player profiles and personalised favourites via Football Data API</li>
-            <li>Real-time match chat using Firestore snapshot listeners</li>
-            <li>Anti-corruption layer normalises raw API responses into typed DTOs</li>
-            <li>Automated keyword moderation with configurable severity and strike system</li>
-            <li>Women's football treated as a first-class feature throughout</li>
-          </ul>
-          <div class="project-tech">
-            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span><span>MVVM</span><span>Provider</span>
-          </div>
-          <a href="https://github.com/mozaid9/footyforums" target="_blank" class="project-link">View on GitHub &rarr;</a>
         </div>
 
-        <div class="project-card featured">
-          <div class="project-header">
-            <h3>NextMatch</h3>
-            <span class="badge">Personal Project</span>
+        <div class="services-grid">
+          <article class="service-card service-card-featured">
+            <span class="service-number">01</span>
+            <h3>Business websites</h3>
+            <p>
+              Clear, responsive websites that explain what you do, build trust
+              quickly and turn the right visitors into enquiries.
+            </p>
+            <ul>
+              <li>Custom page design</li>
+              <li>Mobile and tablet optimisation</li>
+              <li>Enquiry and quote journeys</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Content management</h3>
+            <p>
+              Simple admin tools so your team can update projects, images and
+              content without waiting for a developer.
+            </p>
+            <ul>
+              <li>Secure admin access</li>
+              <li>Image and video uploads</li>
+              <li>Custom content workflows</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Technical foundations</h3>
+            <p>
+              The behind-the-scenes work that makes a website fast, discoverable,
+              secure and dependable after launch.
+            </p>
+            <ul>
+              <li>Technical SEO and analytics</li>
+              <li>Performance and accessibility</li>
+              <li>Hosting and security setup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected client work</p>
+            <h2>Real businesses. Real requirements. Working websites.</h2>
           </div>
-          <p class="project-desc">
-            A Flutter app that lets football players find, join and pay for local matches — no group chats, no chasing payments.
+          <p>
+            Each project is shaped around the client’s goals rather than forced
+            into the same template.
           </p>
-          <ul class="project-highlights">
-            <li>Two payment modes: split-cost with mock Stripe flow, or organiser-pays with owed-amount tracking</li>
-            <li>Trust system with a 0–100 reliability score, attendance penalties and organiser approval gates for low-reliability players</li>
-            <li>Post-match ability ratings (1.0–5.0 running average) with a planned move to Elo/Glicko modelling</li>
-            <li>Organiser dashboard to approve players, mark attendance and unlock post-match ratings</li>
-          </ul>
-          <div class="project-tech">
-            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span><span>Firebase Auth</span>
-          </div>
-          <a href="https://github.com/mozaid9/NextMatch" target="_blank" class="project-link">View on GitHub &rarr;</a>
         </div>
 
-        <div class="project-card featured">
-          <div class="project-header">
+        <article class="case-study case-study-primary">
+          <div class="case-visual haizain-visual" aria-hidden="true">
+            <div class="case-browser">
+              <div class="case-browser-bar"><span></span><span></span><span></span></div>
+              <div class="construction-preview">
+                <p>HAIZAIN</p>
+                <h3>Building better spaces.</h3>
+                <span class="preview-line"></span>
+                <span class="preview-button">REQUEST A QUOTE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-content">
+            <div class="case-meta">
+              <span>Client website</span>
+              <span class="status status-live">Live</span>
+            </div>
             <h3>Haizain Construction</h3>
-            <span class="badge">Client Work</span><span class="badge live">Live</span>
-          </div>
-          <p class="project-desc">
-            A production website for a construction firm in Manchester, built and shipped end to end. Seven pages, a portfolio the client updates themselves and a quote pipeline that lands enquiries in their inbox.
-          </p>
-          <ul class="project-highlights">
-            <li>Custom admin CMS so the client adds projects, photos and video without touching code — Firebase Auth login gate, Firestore CRUD and Cloudinary uploads</li>
-            <li>Dynamic portfolio with category filters, a lightbox gallery and an auto-advancing slideshow</li>
-            <li>Firestore rules restricted to an admin allowlist with default deny on everything else</li>
-            <li>Hardened hosting: strict Content Security Policy, security headers and per-asset cache rules</li>
-            <li>Technical SEO with LocalBusiness structured data, canonical URLs, Open Graph tags and a sitemap</li>
-          </ul>
-          <div class="project-tech">
-            <span>JavaScript</span><span>HTML / CSS</span><span>Firebase Hosting</span><span>Firestore</span><span>Firebase Auth</span><span>Cloudinary</span><span>SEO</span>
-          </div>
-          <a href="https://haizainconstruction.co.uk" target="_blank" class="project-link">Visit haizainconstruction.co.uk &rarr;</a>
-        </div>
+            <p class="case-summary">
+              A complete digital presence for a Manchester construction firm,
+              including a seven-page marketing site and a custom system that lets
+              the client manage its own project portfolio.
+            </p>
 
-        <div class="project-card featured">
-          <div class="project-header">
+            <dl class="case-results">
+              <div><dt>7</dt><dd>Purpose-built pages</dd></div>
+              <div><dt>1</dt><dd>Custom admin CMS</dd></div>
+              <div><dt>100%</dt><dd>Client-managed portfolio</dd></div>
+            </dl>
+
+            <ul class="case-features">
+              <li>Quote enquiry journey connected directly to the business</li>
+              <li>Secure project, image and video management</li>
+              <li>Technical SEO, structured data and hardened hosting</li>
+            </ul>
+
+            <a
+              class="text-link"
+              href="https://haizainconstruction.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit the live website <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="case-study">
+          <div class="case-visual arranged-visual" aria-hidden="true">
+            <div class="arranged-mark">SA</div>
+            <div class="arranged-copy">
+              <span>A thoughtful way to meet</span>
+              <span></span><span></span>
+            </div>
+            <div class="arranged-cards">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="case-content">
+            <div class="case-meta">
+              <span>Website &amp; platform</span>
+              <span class="status status-progress">In development</span>
+            </div>
             <h3>Simply Arranged</h3>
-            <span class="badge">Client Work</span><span class="badge wip">In Progress</span>
+            <p class="case-summary">
+              A professional website and member-platform foundation for a
+              human-led Muslim matchmaking service, designed around privacy,
+              consent and a carefully managed introduction process.
+            </p>
+            <ul class="case-features">
+              <li>Consistent multi-page design system</li>
+              <li>Privacy-conscious registration and consent journey</li>
+              <li>Secure architecture for future member workflows</li>
+            </ul>
+            <p class="project-note">Private client build · Launch in progress</p>
           </div>
-          <p class="project-desc">
-            A human-led Muslim matchmaking service with software wrapped around it. Not a dating app: members never contact each other directly and every introduction runs through the matchmaking team. I'm building the website now and designing the member platform behind it.
-          </p>
-          <ul class="project-highlights">
-            <li>Six-page site built on a token-based design system, where every colour, size and spacing value lives in one stylesheet and nothing else hardcodes one</li>
-            <li>Explicit consent gate in front of the sign-up form, so nobody submits personal data without first being told how it is handled</li>
-            <li>Data model designed around hard product rules: one active match at a time, locked in a Firestore transaction, and double-blind decisions that never reveal the other side's answer</li>
-            <li>Privileged logic kept in Cloud Functions with default-deny security rules, plus Stripe Checkout for the membership fee</li>
-            <li>Accessibility and UK GDPR treated as build requirements rather than afterthoughts</li>
-          </ul>
-          <div class="project-tech">
-            <span>JavaScript</span><span>HTML / CSS</span><span>Firebase</span><span>Firestore</span><span>Cloud Functions</span><span>Stripe</span>
-          </div>
-          <a href="https://simplyarranged.co.uk" target="_blank" class="project-link">Visit simplyarranged.co.uk &rarr;</a>
-        </div>
-
-        <div class="project-card featured">
-          <div class="project-header">
-            <h3>Aegis</h3>
-            <span class="badge">Personal Project</span>
-          </div>
-          <p class="project-desc">
-            A local AI assistant that runs entirely on-device. Built on Ollama with a persistent memory system, voice input and a web UI. No cloud, no API keys.
-          </p>
-          <ul class="project-highlights">
-            <li>REST API server in pure Python with zero third-party dependencies</li>
-            <li>SQLite memory with context injected into every prompt</li>
-            <li>Voice input via mlx-whisper and ffmpeg</li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span><span>Ollama</span><span>SQLite</span><span>Whisper</span>
-          </div>
-          <a href="https://github.com/mozaid9/aegis" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card featured">
-          <div class="project-header">
-            <h3>Joke Microservice</h3>
-            <span class="badge">University Assignment</span><span class="badge score">80%</span>
-          </div>
-          <p class="project-desc">
-            A distributed microservices system deployed on Azure. Separate joke, submit and moderator services communicate via RabbitMQ with an ETL container writing to the database. Routed through a Kong API gateway with HTTPS and rate limiting.
-          </p>
-          <ul class="project-highlights">
-            <li>Containerised with Docker and orchestrated via Docker Compose</li>
-            <li>Async messaging via RabbitMQ with persistent queues</li>
-            <li>Kong API gateway with TLS and rate limiting</li>
-            <li>Infrastructure provisioned with Terraform on Azure</li>
-          </ul>
-          <div class="project-tech">
-            <span>Node.js</span><span>Docker</span><span>RabbitMQ</span><span>MongoDB</span><span>Kong</span><span>Terraform</span><span>Azure</span>
-          </div>
-          <a href="https://github.com/mozaid9/joke-service" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>SmartOffice</h3>
-            <span class="badge">University Assignment</span><span class="badge score">82%</span>
-          </div>
-          <p class="project-desc">
-            Smart office management system in C# with a single controller for lighting, door access and fire alarms. Built around a state machine with enforced transitions and a full unit test suite.
-          </p>
-          <div class="project-tech">
-            <span>C#</span><span>.NET</span><span>State Machine</span><span>Unit Tests</span>
-          </div>
-          <a href="https://github.com/mozaid9/SmartOffice" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Smart Home System</h3>
-            <span class="badge">University Assignment</span><span class="badge score">87%</span>
-          </div>
-          <p class="project-desc">A C++ smart home system built around an OOP inheritance hierarchy. SmartDevice base class with SmartLight, SmartSpeaker, Thermostat and SecurityCamera subclasses, managed across rooms with manual memory management.</p>
-          <div class="project-tech">
-            <span>C++</span><span>OOP</span><span>Inheritance</span><span>Memory Management</span>
-          </div>
-          <a href="https://github.com/mozaid9/advancedprogramming" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Sorting Algorithm Benchmarker</h3>
-            <span class="badge">University Assignment</span><span class="badge score">74%</span>
-          </div>
-          <p class="project-desc">Merge Sort vs Quick Sort performance analysis in Python across datasets of 10k and 100k elements, tracking comparisons, execution time and memory usage with matplotlib visualisations.</p>
-          <div class="project-tech">
-            <span>Python</span><span>Algorithms</span><span>Matplotlib</span><span>Pandas</span>
-          </div>
-          <a href="https://github.com/mozaid9/computational-thinking" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>AR Campus Navigation</h3>
-            <span class="badge">Group Project</span><span class="badge score">1st</span>
-          </div>
-          <p class="project-desc">An augmented reality app in Unity to help neurodiverse students navigate the UCLan campus. Awarded a First and achieved the second-highest score in the year group.</p>
-          <div class="project-tech">
-            <span>Unity</span><span>C#</span><span>AR</span><span>Mobile</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Facial Emotion Recognition</h3>
-            <span class="badge">University Project</span>
-          </div>
-          <p class="project-desc">ML model that classifies facial expressions into emotion categories from image data.</p>
-          <div class="project-tech">
-            <span>Python</span><span>Jupyter</span><span>ML</span>
-          </div>
-          <a href="https://github.com/mozaid9/Faciel-emotion-recognition" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Sugar Tracker</h3>
-            <span class="badge">University Project</span>
-          </div>
-          <p class="project-desc">Cross-platform mobile app for tracking sugar intake, built with Flutter.</p>
-          <div class="project-tech">
-            <span>Dart</span><span>Flutter</span><span>Mobile</span>
-          </div>
-          <a href="https://github.com/mozaid9/sugartrackerapp" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Pack That Player</h3>
-            <span class="badge">Personal Project</span>
-          </div>
-          <p class="project-desc">A Roblox game with custom Lua scripting for pack-opening mechanics and game logic.</p>
-          <div class="project-tech">
-            <span>Lua</span><span>Roblox</span><span>Game Dev</span>
-          </div>
-          <a href="https://github.com/mozaid9/UnboxAFootballer" target="_blank" class="project-link">View on GitHub &rarr;</a>
-        </div>
-
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="experience-list">
-
-        <div class="experience-item">
-          <div class="project-header">
-            <h3>Computer Science Teaching Internship</h3>
-            <span class="badge">Jun &ndash; Jul 2026</span>
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">How projects work</p>
+            <h2>A straightforward process with no unnecessary complexity.</h2>
           </div>
-          <p class="experience-org">Essa Academy, Bolton &middot; NET Staff College, Northern Education Trust</p>
-          <ul class="project-highlights">
-            <li>Taught Computer Science to GCSE students, planning and delivering lessons</li>
-            <li>Broke down algorithms, data representation and programming logic for students working at very different levels</li>
-            <li>Covered English lessons during school breaks</li>
-          </ul>
+          <p>
+            You stay informed throughout, with clear decisions and a website
+            that is ready to use—not an unfinished handover.
+          </p>
         </div>
 
-        <div class="experience-item">
-          <div class="project-header">
-            <h3>Recreational Supervisor</h3>
-            <span class="badge">Sep 2023 &ndash; Present</span>
-          </div>
-          <p class="experience-org">Edu-Lettings, Northwest Region</p>
-          <ul class="project-highlights">
-            <li>Lone worker across multiple school sites, keyholder responsible for opening, closing and site safety</li>
-            <li>Handle queries and resolve issues on the spot without direct supervision</li>
-          </ul>
-        </div>
-
+        <ol class="process-grid">
+          <li>
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>We define your audience, goals, content and the actions the website should drive.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Design</h3>
+            <p>I shape the structure and visual direction around your business and brand.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Build</h3>
+            <p>The responsive website, integrations and content tools are developed and tested.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>I handle the final checks, deployment and a clear handover for your team.</p>
+          </li>
+        </ol>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <ul>
-            <li>Python</li>
-            <li>C#</li>
-            <li>Dart</li>
-            <li>JavaScript</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>Lua</li>
-            <li>HTML / CSS</li>
-          </ul>
+    <section class="section section-dark" id="about">
+      <div class="container about-layout">
+        <div>
+          <p class="eyebrow">About the developer</p>
+          <h2>Technical depth, without the technical runaround.</h2>
         </div>
-        <div class="skill-group">
-          <h4>Technologies</h4>
-          <ul>
-            <li>Node.js / Express</li>
-            <li>Flutter / Dart</li>
-            <li>Firebase / Firestore</li>
-            <li>Cloud Functions</li>
-            <li>Firebase Hosting</li>
-            <li>Stripe</li>
-            <li>Docker</li>
-            <li>RabbitMQ</li>
-            <li>Unity</li>
-            <li>Ollama / LLMs</li>
-            <li>.NET</li>
-            <li>MongoDB</li>
-            <li>Azure / Terraform</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4>Concepts</h4>
-          <ul>
-            <li>Microservices Architecture</li>
-            <li>MVVM Architecture</li>
-            <li>Real-time Systems</li>
-            <li>State Machine Design</li>
-            <li>Unit Testing</li>
-            <li>Machine Learning</li>
-            <li>Mobile Development</li>
-            <li>Web Security / CSP</li>
-            <li>Technical SEO</li>
-            <li>Accessibility</li>
-            <li>Data Protection / GDPR</li>
-          </ul>
+        <div class="about-copy">
+          <p>
+            I’m Mohmmed Zaid Patel, a UK-based freelance web developer and
+            First Class Software Engineering graduate. I combine software
+            engineering discipline with a practical focus on what businesses
+            actually need: credibility, clarity and a website that works.
+          </p>
+          <p>
+            My experience covers client websites, custom admin systems, mobile
+            applications and cloud-backed platforms. That means I can handle
+            both the polished pages your customers see and the technical systems
+            working behind them.
+          </p>
+          <div class="about-links">
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/mohmmed-zaid-518b27291/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn <span aria-hidden="true">↗</span></a>
+            <a
+              class="text-link"
+              href="https://github.com/mozaid9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Open to software engineering roles. Feel free to reach out.</p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/mohmmed-zaid-518b27291/" target="_blank" class="btn btn-primary">LinkedIn</a>
-        <a href="https://github.com/mozaid9" target="_blank" class="btn btn-outline">GitHub</a>
+      <div class="container engineering-section">
+        <div class="engineering-heading">
+          <div>
+            <p class="eyebrow">Technical depth</p>
+            <h3>Selected software engineering work</h3>
+          </div>
+          <p>Supporting projects that demonstrate the engineering behind my client work.</p>
+        </div>
+
+        <div class="engineering-grid">
+          <article>
+            <span>Flutter · Firebase · Real-time data</span>
+            <h4>FootyForums</h4>
+            <p>First Class dissertation project combining live football data with real-time community features.</p>
+            <span class="project-label">Dissertation · 80%</span>
+          </article>
+          <article>
+            <span>Flutter · Payments · Product design</span>
+            <h4>NextMatch</h4>
+            <p>A mobile platform for finding, organising and paying for local football matches.</p>
+            <a
+              href="https://github.com/mozaid9/NextMatch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View source <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span>Python · Ollama · SQLite</span>
+            <h4>Aegis</h4>
+            <p>A private, local AI assistant with persistent memory, voice input and no cloud dependency.</p>
+            <a
+              href="https://github.com/mozaid9/aegis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View source <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-panel">
+        <div>
+          <p class="eyebrow">Have a project in mind?</p>
+          <h2>Let’s build a website your business can be proud of.</h2>
+          <p>
+            Tell me what your business needs and where your current website is
+            falling short. I’ll help you work out the right next step.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a
+            class="button button-light"
+            href="https://www.linkedin.com/in/mohmmed-zaid-518b27291/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Message me on LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <small>Share a little about your business, goals and ideal launch timeframe.</small>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Mohmmed Zaid Patel &middot; <a href="https://github.com/mozaid9" target="_blank">mozaid9</a></p>
+    <div class="container footer-content">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">MZ</span>
+          <span class="brand-copy"><strong>Mohmmed Zaid Patel</strong><small>Freelance Web Developer</small></span>
+        </a>
+      </div>
+      <p>Professional websites for ambitious businesses.</p>
+      <p>&copy; <span id="current-year">2026</span> Mohmmed Zaid Patel.</p>
+    </div>
   </footer>
-
 </body>
 </html>
