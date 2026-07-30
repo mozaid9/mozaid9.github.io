@@ -257,10 +257,17 @@ h2::after {
   border-radius: 4px;
 }
 
-.badge.score {
+.badge.score,
+.badge.live {
   color: var(--accent);
   background: rgba(110, 231, 183, 0.08);
   border: 1px solid rgba(110, 231, 183, 0.2);
+}
+
+.badge.wip {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.08);
+  border: 1px solid rgba(251, 191, 36, 0.2);
 }
 
 .project-desc {
@@ -318,6 +325,29 @@ h2::after {
 
 .project-link:hover {
   color: var(--accent);
+}
+
+/* EXPERIENCE */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.experience-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-org {
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 /* SKILLS */

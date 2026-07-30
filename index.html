@@ -13,6 +13,7 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -34,8 +35,12 @@
     <div class="container">
       <h2>About</h2>
       <p>
-        Software engineering graduate from UCLan, expecting a 2:1 with a strong chance of a First.
-        I've built Flutter apps, distributed microservices on Azure, an AR navigation tool and a local AI assistant from scratch.
+        Software engineering graduate from UCLan with First Class Honours.
+        I've built Flutter apps with real payments and server-side logic, a live website for a Manchester construction firm
+        with its own admin CMS, distributed microservices on Azure, an AR navigation tool and a local AI assistant from scratch.
+        I've also taught GCSE Computer Science, which is a fast way to find out how well you actually understand something.
+      </p>
+      <p>
         I pick up new tech quickly and I'm looking for graduate roles where I can contribute from day one.
       </p>
     </div>
@@ -85,6 +90,48 @@
             <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span><span>Firebase Auth</span>
           </div>
           <a href="https://github.com/mozaid9/NextMatch" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Haizain Construction</h3>
+            <span class="badge">Client Work</span><span class="badge live">Live</span>
+          </div>
+          <p class="project-desc">
+            A production website for a construction firm in Manchester, built and shipped end to end. Seven pages, a portfolio the client updates themselves and a quote pipeline that lands enquiries in their inbox.
+          </p>
+          <ul class="project-highlights">
+            <li>Custom admin CMS so the client adds projects, photos and video without touching code — Firebase Auth login gate, Firestore CRUD and Cloudinary uploads</li>
+            <li>Dynamic portfolio with category filters, a lightbox gallery and an auto-advancing slideshow</li>
+            <li>Firestore rules restricted to an admin allowlist with default deny on everything else</li>
+            <li>Hardened hosting: strict Content Security Policy, security headers and per-asset cache rules</li>
+            <li>Technical SEO with LocalBusiness structured data, canonical URLs, Open Graph tags and a sitemap</li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span><span>HTML / CSS</span><span>Firebase Hosting</span><span>Firestore</span><span>Firebase Auth</span><span>Cloudinary</span><span>SEO</span>
+          </div>
+          <a href="https://haizainconstruction.co.uk" target="_blank" class="project-link">Visit haizainconstruction.co.uk &rarr;</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Simply Arranged</h3>
+            <span class="badge">Client Work</span><span class="badge wip">In Progress</span>
+          </div>
+          <p class="project-desc">
+            A human-led Muslim matchmaking service with software wrapped around it. Not a dating app: members never contact each other directly and every introduction runs through the matchmaking team. I'm building the website now and designing the member platform behind it.
+          </p>
+          <ul class="project-highlights">
+            <li>Six-page site built on a token-based design system, where every colour, size and spacing value lives in one stylesheet and nothing else hardcodes one</li>
+            <li>Explicit consent gate in front of the sign-up form, so nobody submits personal data without first being told how it is handled</li>
+            <li>Data model designed around hard product rules: one active match at a time, locked in a Firestore transaction, and double-blind decisions that never reveal the other side's answer</li>
+            <li>Privileged logic kept in Cloud Functions with default-deny security rules, plus Stripe Checkout for the membership fee</li>
+            <li>Accessibility and UK GDPR treated as build requirements rather than afterthoughts</li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span><span>HTML / CSS</span><span>Firebase</span><span>Firestore</span><span>Cloud Functions</span><span>Stripe</span>
+          </div>
+          <a href="https://github.com/mozaid9/SimplyArranged" target="_blank" class="project-link">View on GitHub &rarr;</a>
         </div>
 
         <div class="project-card featured">
@@ -215,6 +262,40 @@
     </div>
   </section>
 
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+
+        <div class="experience-item">
+          <div class="project-header">
+            <h3>Computer Science Teaching Internship</h3>
+            <span class="badge">Jun &ndash; Jul 2026</span>
+          </div>
+          <p class="experience-org">Essa Academy, Bolton &middot; NET Staff College, Northern Education Trust</p>
+          <ul class="project-highlights">
+            <li>Taught Computer Science to GCSE students, planning and delivering lessons</li>
+            <li>Broke down algorithms, data representation and programming logic for students working at very different levels</li>
+            <li>Covered English lessons during school breaks</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="project-header">
+            <h3>Recreational Supervisor</h3>
+            <span class="badge">Sep 2023 &ndash; Present</span>
+          </div>
+          <p class="experience-org">Edu-Lettings, Northwest Region</p>
+          <ul class="project-highlights">
+            <li>Lone worker across multiple school sites, keyholder responsible for opening, closing and site safety</li>
+            <li>Handle queries and resolve issues on the spot without direct supervision</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
@@ -225,8 +306,10 @@
             <li>Python</li>
             <li>C#</li>
             <li>Dart</li>
+            <li>JavaScript</li>
             <li>C++</li>
             <li>Java</li>
+            <li>SQL</li>
             <li>Lua</li>
             <li>HTML / CSS</li>
           </ul>
@@ -237,6 +320,9 @@
             <li>Node.js / Express</li>
             <li>Flutter / Dart</li>
             <li>Firebase / Firestore</li>
+            <li>Cloud Functions</li>
+            <li>Firebase Hosting</li>
+            <li>Stripe</li>
             <li>Docker</li>
             <li>RabbitMQ</li>
             <li>Unity</li>
@@ -256,6 +342,10 @@
             <li>Unit Testing</li>
             <li>Machine Learning</li>
             <li>Mobile Development</li>
+            <li>Web Security / CSP</li>
+            <li>Technical SEO</li>
+            <li>Accessibility</li>
+            <li>Data Protection / GDPR</li>
           </ul>
         </div>
       </div>
